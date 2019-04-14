@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.156
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PRJ_NSA2", "PRJ_NSA2\PRJ_NSA2.csproj", "{C7A61BAF-C17D-441F-AC08-1239E7C46F44}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7A61BAF-C17D-441F-AC08-1239E7C46F44}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{C7A61BAF-C17D-441F-AC08-1239E7C46F44}.Release|Any CPU.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {37197686-B8FB-4D3B-8766-5A8CBB17C2ED}
+	EndGlobalSection
+EndGlobal

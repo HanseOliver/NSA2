@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C7A61BAF-C17D-441F-AC08-1239E7C46F44}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Prj_NSA2</RootNamespace>
+    <AssemblyName>Prj_NSA2</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bd_EscolaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Bd_EscolaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CadAlunosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadAlunosForm.Designer.cs">
+      <DependentUpon>CadAlunosForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadDisciForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadDisciForm.Designer.cs">
+      <DependentUpon>CadDisciForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conexao.cs" />
+    <Compile Include="Dev.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dev.Designer.cs">
+      <DependentUpon>Dev.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Cons_Ana_Alunos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Cons_Ana_Alunos.Designer.cs">
+      <DependentUpon>frm_Cons_Ana_Alunos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Cons_Ana_Disciplina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Cons_Ana_Disciplina.Designer.cs">
+      <DependentUpon>frm_Cons_Ana_Disciplina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Cons_Ana_Mencoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Cons_Ana_Mencoes.Designer.cs">
+      <DependentUpon>frm_Cons_Ana_Mencoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Cons_Cad_Al.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Cons_Cad_Al.Designer.cs">
+      <DependentUpon>frm_Cons_Cad_Al.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Cons_Cad_Disc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Cons_Cad_Disc.Designer.cs">
+      <DependentUpon>frm_Cons_Cad_Disc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_menu.Designer.cs">
+      <DependentUpon>frm_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rel_ana_Boletim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_rel_ana_Boletim.Designer.cs">
+      <DependentUpon>frm_rel_ana_Boletim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rel_ana_disc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_rel_ana_disc.Designer.cs">
+      <DependentUpon>frm_rel_ana_disc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rel_an_menc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_rel_an_menc.Designer.cs">
+      <DependentUpon>frm_rel_an_menc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rel_cad_aluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_rel_cad_aluno.Designer.cs">
+      <DependentUpon>frm_rel_cad_aluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rel_cad_disc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_rel_cad_disc.Designer.cs">
+      <DependentUpon>frm_rel_cad_disc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LancarNotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LancarNotas.Designer.cs">
+      <DependentUpon>LancarNotas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CadAlunosForm.resx">
+      <DependentUpon>CadAlunosForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadDisciForm.resx">
+      <DependentUpon>CadDisciForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dev.resx">
+      <DependentUpon>Dev.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Cons_Ana_Alunos.resx">
+      <DependentUpon>frm_Cons_Ana_Alunos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Cons_Ana_Disciplina.resx">
+      <DependentUpon>frm_Cons_Ana_Disciplina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Cons_Ana_Mencoes.resx">
+      <DependentUpon>frm_Cons_Ana_Mencoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Cons_Cad_Al.resx">
+      <DependentUpon>frm_Cons_Cad_Al.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Cons_Cad_Disc.resx">
+      <DependentUpon>frm_Cons_Cad_Disc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_menu.resx">
+      <DependentUpon>frm_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rel_ana_Boletim.resx">
+      <DependentUpon>frm_rel_ana_Boletim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rel_ana_disc.resx">
+      <DependentUpon>frm_rel_ana_disc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rel_an_menc.resx">
+      <DependentUpon>frm_rel_an_menc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rel_cad_aluno.resx">
+      <DependentUpon>frm_rel_cad_aluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rel_cad_disc.resx">
+      <DependentUpon>frm_rel_cad_disc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LancarNotas.resx">
+      <DependentUpon>LancarNotas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Bd_EscolaDataSet.xsc">
+      <DependentUpon>Bd_EscolaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Bd_EscolaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Bd_EscolaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Bd_EscolaDataSet.xss">
+      <DependentUpon>Bd_EscolaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
